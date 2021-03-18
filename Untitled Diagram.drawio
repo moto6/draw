@@ -1,1 +1,106 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T13:27:08.799Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" version="14.4.9" etag="Qko5gV-ucfq4n-Kls4Xc" type="github"><diagram id="aM_ZloH5ehefcKWh3QA5">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-18T13:52:01.791Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="rD6BbuAs5xVTzWjVrT3v" version="14.4.9" type="github">
+  <diagram id="aM_ZloH5ehefcKWh3QA5" name="Page-1">
+    <mxGraphModel dx="1346" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-1" value="L7" style="ellipse;whiteSpace=wrap;html=1;fontSize=30;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-2" value="Server 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="70" y="280" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-3" value="Server 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-4" value="" style="endArrow=classic;html=1;fontSize=30;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IEJEwD0IdjdtA9lDOU1T-1" target="IEJEwD0IdjdtA9lDOU1T-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="420" as="sourcePoint" />
+            <mxPoint x="310" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-5" value="" style="endArrow=classic;html=1;fontSize=30;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IEJEwD0IdjdtA9lDOU1T-1" target="IEJEwD0IdjdtA9lDOU1T-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="227.57359312880715" y="208.2842712474618" as="sourcePoint" />
+            <mxPoint x="155" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-6" value="Case 1 : Sticky Session" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="45" y="60" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-7" value="특징&lt;br&gt;- 7계층의 http 헤더를 해석할 수 있는 lb7이 필요&lt;br&gt;- 사용자별로 담당하는 서버가 정해져 있고, &lt;br&gt;L7이 담당 서버로 알아서 분배 해 줌&lt;br&gt;&lt;br&gt;장점&lt;br style=&quot;font-size: 25px&quot;&gt;- 개발자는 신경쓸것이 없으므로 매우 편-안하다(개발친화적이다)&lt;br style=&quot;font-size: 25px&quot;&gt;&lt;br style=&quot;font-size: 25px&quot;&gt;&lt;br style=&quot;font-size: 25px&quot;&gt;단점&lt;br style=&quot;font-size: 25px&quot;&gt;- 엄청비싼 로드벨런서 L7 장비를 사야한다(최소1억)" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="70" y="365" width="650" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-8" value="L4" style="ellipse;whiteSpace=wrap;html=1;fontSize=30;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="225" y="1030" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-9" value="Server 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-10" value="Server 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-13" value="Case 2 : Session DB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="70" y="960" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-14" value="특징&lt;br&gt;- 대부분의 스타트업 웹기술은 이런방식으로 구현되어있다.&lt;br&gt;- Session DB로 대부분 REDIS를 많이 쓴다.&lt;br&gt;- 레디스 범위 초과하는 많은 인원 수용 시, LRU정책이 있는데&lt;br&gt;&amp;nbsp; - Latest Recently Used 라고 하는데.. 뭐였드라?&lt;br&gt;&lt;br&gt;장점&lt;br style=&quot;font-size: 25px&quot;&gt;- 별도의 세션디비라고는 하지만, 저렴하게 구성할 수 있다(월 5만원)&lt;br style=&quot;font-size: 25px&quot;&gt;- 탐캣 스프링에서 간편하게 세션디비 설정을 지원한다&lt;br style=&quot;font-size: 25px&quot;&gt;&lt;br style=&quot;font-size: 25px&quot;&gt;단점&lt;br style=&quot;font-size: 25px&quot;&gt;- 별도의 세션디비가 필요하다(하지만, 간단하고 저렴)" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1265" width="680" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-15" value="L7" style="ellipse;whiteSpace=wrap;html=1;fontSize=30;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="2020" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-16" value="Server 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="120" y="2170" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-17" value="Server 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2170" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-20" value="Case 3 : Backend channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1950" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-21" value="특징&lt;br&gt;- 레거시말고는 거의 사장된기술&lt;br&gt;- VOLTEX라는 키워드로 검색해보길 바란다&lt;br&gt;&lt;br&gt;장점&lt;br style=&quot;font-size: 25px&quot;&gt;- 속도가 빠르다&lt;br style=&quot;font-size: 25px&quot;&gt;&lt;br style=&quot;font-size: 25px&quot;&gt;&lt;br style=&quot;font-size: 25px&quot;&gt;단점&lt;br style=&quot;font-size: 25px&quot;&gt;- 메모리 사용이 많다&lt;br style=&quot;font-size: 25px&quot;&gt;- 서버간 커뮤니케이션 하는데 구현난이도가 높다" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="120" y="2255" width="490" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-22" value="Session&amp;nbsp;&lt;br&gt;DB" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=25;align=center;" vertex="1" parent="1">
+          <mxGeometry x="475" y="1070" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-23" value="사용자별로 알맞은 서버로&amp;nbsp;&lt;br&gt;L7 장비가 알아서 보내준다" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="345" y="200" width="335" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-24" value="아무 서버로 L4 장비가 보낸다" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1010" width="335" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-26" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=25;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="2190" as="sourcePoint" />
+            <mxPoint x="350" y="2190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-27" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=25;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="2210" as="sourcePoint" />
+            <mxPoint x="350" y="2210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-29" value="" style="endArrow=classic;html=1;fontSize=25;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="2105" as="sourcePoint" />
+            <mxPoint x="309.5" y="2145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-30" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="2150" width="380" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-33" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;align=center;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1164" width="380" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="IEJEwD0IdjdtA9lDOU1T-35" value="" style="endArrow=classic;html=1;fontSize=25;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="285" y="1120" as="sourcePoint" />
+            <mxPoint x="284.5" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
